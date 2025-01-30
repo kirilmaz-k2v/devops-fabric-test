@@ -24,8 +24,11 @@
     "java.project.outputPath": ".studioWeb/java/bin",
     "java.project.sourcePaths": [
 		"Implementation/SharedObjects/Java/src",	
+		"Implementation/LogicalUnits/TestLU2/Java/src",	
 		"Implementation/LogicalUnits/k2_ws/Java/src",	
-		"Implementation/LogicalUnits/k2_ref/Java/src"	
+		"Implementation/LogicalUnits/k2_ref/Java/src",	
+		"Implementation/LogicalUnits/TestLU3/Java/src",	
+		"Implementation/LogicalUnits/TestLU1/Java/src"	
 	],
 	"java.project.resourceFilters": [
         "node_modules",
