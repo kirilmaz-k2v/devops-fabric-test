@@ -1,8 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
-  <!-- External libraries of the project. buildArtifacts.sh resolves them through Maven (Nexus):
-       compile/runtime scope -> compile classpath + lib/ in every LU's ludbXMLs.zip
-       provided scope        -> compile classpath only (expected to come from Fabric) -->
+  <!-- External libraries of the project. buildArtifacts.sh downloads the compile and runtime scopes
+       through Maven (Nexus) to the compile classpath and lib/ in every LU's ludbXMLs.zip -->
   <groupId>com.k2view.projects</groupId>
   <artifactId>devops-fabric-test</artifactId>
   <version>1.0.0</version>
@@ -14,7 +13,7 @@
       <artifactId>customer-utils</artifactId>
       <version>1.0.0</version>
     </dependency>
-    <!-- Also shipped in Fabric lib/fabric: used to check whether "provided" works at runtime -->
+    <!-- provided scope is not downloaded or packaged (the lab shows it is not visible to an LU at runtime) -->
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
